@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Quant Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 20px;
+    }
+
+    canvas {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+
+    select {
+      margin-right: 10px;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    td {
+      border: 1px solid #ccc;
+      padding: 6px 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Market Analytics Dashboard</h2>
+
+  <!-- Controls -->
+  <label>Symbol 1:</label>
+  <select id="sym1">
+    <option value="btcusdt">BTCUSDT</option>
+    <option value="ethusdt">ETHUSDT</option>
+  </select>
+
+  <label>Symbol 2:</label>
+  <select id="sym2">
+    <option value="ethusdt">ETHUSDT</option>
+    <option value="btcusdt">BTCUSDT</option>
+  </select>
+  <label>Timeframe:</label>
+  <select id="timeframe">
+    <option value="1S">1s</option>
+    <option value="5S">5s</option>
+    <option value="15S">15s</option>
+    <option value="1min">1min</option>
+  </select>
+
+  <label>Z-Alert:</label>
+  <input id="zThreshold" type="number" step="0.1" value="2" style="width:60px">
+
+  <hr>
+
+
+  <hr>
+  <div id="alertBox" style="
+  display:none;
+  padding:10px;
+  margin:10px 0;
+  background:#ff4d4d;
+  color:white;
+  font-weight:bold;
+  border-radius:6px;">
+  </div>
+
+
+  <h3>Price</h3>
+  <canvas id="priceChart"></canvas>
+
+  <h3>Spread & Z-Score</h3>
+  <canvas id="spreadChart"></canvas>
+
+  <h3>Rolling Correlation</h3>
+  <canvas id="corrChart"></canvas>
+
+  <h3>Summary Stats</h3>
+  <table>
+    <tbody id="statsTable"></tbody>
+  </table>
+
+  <h3>Data Export</h3>
+
+  <button onclick="downloadPrice()">Download Price CSV</button>
+  <button onclick="downloadSpread()">Download Spread CSV</button>
+  <button onclick="downloadCorrelation()">Download Correlation CSV</button>
+  <!-- <button onclick="downloadHourlySummary()">
+    Download 1-Hour Summary
+  </button> -->
+
+  <script src="/static/chart.js"></script>
+</body>
+
+</html>
