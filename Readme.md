@@ -13,8 +13,8 @@ This project collects real-time Binance tick data for cryptocurrency pairs like 
 * **GET /api/prices_v2** – Get high-resolution price series 
 * **GET /api/alerts_v2** – Generate z-score based alerts 
 * **GET /api/export/price** – Export recent prices as CSV.
-* **GET /api/export/spread** – Export spread and z-score as CSV.
-* **GET /api/export/correlation** – Export correlation as CSV.
+* **GET /api/export/spread** – Export spread and z-score as CSV.(Partial Done)
+* **GET /api/export/correlation** – Export correlation as CSV.(Partial Done)
 * **POST /api/admin/schedule** – Admin endpoint to compute hourly summaries.
 
 
