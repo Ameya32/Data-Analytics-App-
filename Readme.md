@@ -1,6 +1,4 @@
-Sure! Here’s the revised version with example routes included:
 
----
 
 This project collects real-time Binance tick data for cryptocurrency pairs like BTC/USDT and ETH/USDT, stores it in a SQLite database, and provides analytics through a Flask API. The APIs allow users to fetch recent prices, compute and retrieve spread and z-score between symbol pairs, calculate rolling correlations, generate summary statistics, trigger z-score based alerts, and export price, spread, correlation. An admin endpoint allows computation of hourly summaries that aggregate price, spread, and correlation statistics for easier analysis.
 
