@@ -13,7 +13,7 @@ This project collects real-time Binance tick data for cryptocurrency pairs like 
 * **GET /api/export/price** – Export recent prices as CSV.
 * **GET /api/export/spread** – Export spread and z-score as CSV.(Partial Done)
 * **GET /api/export/correlation** – Export correlation as CSV.(Partial Done)
-* **POST /api/admin/schedule** – Admin endpoint to compute hourly summaries.
+* **POST /api/admin/schedule** – Admin endpoint to compute hourly summaries.This api currenty for admin can store hourly summary directly in database.
 
 
 **Dynamic Visualization**
@@ -24,15 +24,15 @@ The graphs update in real time to display price movements, spread, z-score, and 
 **How to Run the Project**
 
 Step 1: Set up a virtual environment
-virtualenv venv
+'''virtualenv venv'''
 
 Step 2: Activate the virtual environment
-.\venv\Scripts\Activate.ps1
+'''.\venv\Scripts\Activate.ps1'''
 
 Step 3: Install required libraries
-pip install -r requirements.txt
+'''pip install -r requirements.txt'''
 
 Step 4: Run the application
-python app.py
+'''python app.py'''
 
 Once the application is running, open a browser and access the dashboard to view and interact with the real-time analytics.
