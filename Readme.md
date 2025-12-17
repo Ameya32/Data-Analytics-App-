@@ -13,7 +13,7 @@ This project collects real-time Binance tick data for cryptocurrency pairs like 
 * **GET /api/export/price** – Export recent prices as CSV.
 * **GET /api/export/spread** – Export spread and z-score as CSV.(Partial Done)
 * **GET /api/export/correlation** – Export correlation as CSV.(Partial Done)
-* **POST /api/admin/schedule** – Admin endpoint to compute hourly summaries.This api currenty for admin can store hourly summary directly in database.
+* **POST /api/admin/schedule** – Admin endpoint to compute hourly summaries.This api currenty for admin can store hourly summary directly in database.This same can be used to give hour summary to user which at end can help user understanding current trends along with charts.
 
 
 **Dynamic Visualization**
