@@ -16,3 +16,22 @@ This project collects real-time Binance tick data for cryptocurrency pairs like 
 * **POST /api/admin/schedule** – Admin endpoint to compute hourly summaries.
 
 
+**Dynamic Visualization**
+
+Using the interactive dashboard controls, users can dynamically visualize market data by selecting different symbol pairs and timeframes.
+The graphs update in real time to display price movements, spread, z-score, and rolling correlation, allowing easy comparison and analysis across different assets and resolutions.
+
+**How to Run the Project**
+1.Set up a virtual environment
+virtualenv venv
+
+2.Activate the virtual environment
+.\venv\Scripts\Activate.ps1
+
+3.Install required libraries
+pip install -r requirements.txt
+
+4.Run the application
+python app.py
+
+Once the application is running, open a browser and access the dashboard to view and interact with the real-time analytics.
