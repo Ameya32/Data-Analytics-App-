@@ -22,16 +22,17 @@ Using the interactive dashboard controls, users can dynamically visualize market
 The graphs update in real time to display price movements, spread, z-score, and rolling correlation, allowing easy comparison and analysis across different assets and resolutions.
 
 **How to Run the Project**
-1.Set up a virtual environment
+
+Step 1: Set up a virtual environment
 virtualenv venv
 
-2.Activate the virtual environment
+Step 2: Activate the virtual environment
 .\venv\Scripts\Activate.ps1
 
-3.Install required libraries
+Step 3: Install required libraries
 pip install -r requirements.txt
 
-4.Run the application
+Step 4: Run the application
 python app.py
 
 Once the application is running, open a browser and access the dashboard to view and interact with the real-time analytics.
